@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
+    "@cap-js/hana": "^3",
     "@sap/cds": "^10"
   },
   "devDependencies": {
@@ -25,5 +26,12 @@
   ],
   "sapux": [
     "app/project1"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "db": "hana"
+      }
+    }
+  }
 }
